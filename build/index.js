@@ -38,6 +38,17 @@ let infos = ["felipe", 15, "Joao", 19];
 // tuplas
 let boleto = ["agua conta", 199.90, 7493829182];
 // arrays métodos -> mesmos do js
-// datas
+// Datas
 let aniversario = new Date("2023-09-01 20:08");
 console.log(aniversario.toString());
+// funções
+function addNumber(x, y) {
+    return x + y;
+}
+function addToHello(name) {
+    return `hello ${name}`;
+}
+let soma = addNumber(10, 5);
+let msg = addToHello("João");
+console.log(soma);
+console.log(msg);

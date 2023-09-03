@@ -59,3 +59,27 @@ let boleto:[string, number, number] = ["agua conta",199.90,7493829182];
 // Datas
 let aniversario: Date = new Date("2023-09-01 20:08");
 console.log(aniversario.toString());
+
+// funções
+function addNumber(x: number, y: number): number { // declaração explicita
+    return x + y;
+}
+function addToHello(name:string) {// declaração implicita
+    return `hello ${name}`
+}
+let soma: number = addNumber(10,5);
+let msg: string = addToHello("João"); 
+console.log(soma);
+console.log(msg);
+
+// funções multi tipos
+function callPhone(phone:number | string): number | string { // tambem pode ser declarada por "any"
+    return phone;
+}
+console.log(callPhone("9988665839"));
+
+// função Async
+
+async function getDatabase(id:number):Promise<string> {
+    return "Felipe";
+}
